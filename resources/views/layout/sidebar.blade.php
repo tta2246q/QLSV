@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Quản lý bán hàng</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      height: 100vh;
+      background: #343a40;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+    }
+    .sidebar a:hover {
+      background: #495057;
+    }
+    .content {
+  margin-left: 130px;
+  padding: 20px;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h4 class="text-center mb-4">📊 Quản lý bán hàng</h4>
+    <a href="#">🏠 Trang chủ</a>
+    <a href="#">📦 Sản phẩm</a>
+    <a href="#">👥 Khách hàng</a>
+    <a href="#">🛒 Đơn hàng</a>
+    <a href="#">💰 Doanh thu</a>
+    <a href="#">⚙️ Cài đặt</a>
+    <hr class="bg-light">
+    <a href="login.html">🚪 Đăng xuất</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
