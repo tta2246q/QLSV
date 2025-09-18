@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Phiki\Phast\Root;
 
 Route::get('/', function () {
     return view('pages.admin.index');
@@ -10,27 +11,11 @@ Route::get('/', function () {
 
 // user
 
-Route::get('/home', function () {
-    return view('pages.user.home');
-});
-Route::get('/about', function () {
-    return view('pages.user.about');
-});
-Route::get('/product', function () {
-    return view('pages.user.product');
-});
-Route::get('/contact', function () {
-    return view('pages.user.contact');
-});
-Route::get('/login', function () {
-    return view('pages.user.login');
-});
-Route::get('/register', function () {
-    return view('pages.user.register');
-});
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'homepage'])->name('home');
+Route::get('/about', [App\Http\Controllers\HomeController::class, 'aboutpage'])->name('about');
+Route::get('/product', [App\Http\Controllers\HomeController::class, 'productpage'])->name('product');
+Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactpage'])->name('contact');
+Route::get('/register', [App\Http\Controllers\HomeController::class, 'registerpage'])->name('register');
+Route::get('/login', [App\Http\Controllers\HomeController::class, 'loginpage'])->name('login');
 
 // admin
-Route::get('/dashboard', function () {
-    return view('pages.admin.dashboard.index');
-});
