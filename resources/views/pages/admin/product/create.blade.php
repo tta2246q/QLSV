@@ -14,14 +14,6 @@
             <input type="number" class="form-control" id="price" name="price" required>
         </div>
         <div class="mb-3">
-            <label for="category" class="form-label">Danh mục</label>
-            <input type="text" class="form-control" id="category" name="category" required>
-        </div>
-        <div class="mb-3">
-            <label for="brand" class="form-label">Thương hiệu</label>
-            <input type="text" class="form-control" id="brand" name="brand" required>
-        </div>
-        <div class="mb-3">
             <label for="description" class="form-label">Mô tả</label>
             <textarea class="form-control" id="description" name="description"></textarea>
         </div>

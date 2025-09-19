@@ -5,7 +5,7 @@
         <div class="brand_box">
             <a class="navbar-brand" href="index.html">
                 <span>
-                    Ninom
+                    TTA2246Q
                 </span>
             </a>
         </div>

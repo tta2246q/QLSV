@@ -49,7 +49,7 @@
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                             alteration in some form, by injected humour
                         </p>
-                        <a href="">
+                        <a href="{{route('about')}}">
                             Read More
                         </a>
                     </div>
@@ -86,69 +86,9 @@
                 @empty
                     <p>Không có sản phẩm nào.</p>
                 @endforelse
-                {{-- <div class="box">
-          <img src="access/images/f-2.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Blueberry
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="access/images/f-3.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Banana
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="access/images/f-4.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Apple
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="access/images/f-5.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Mango
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="access/images/f-6.jpg" alt="">
-          <div class="link_box">
-            <h5>
-              Strawberry
-            </h5>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div> --}}
             </div>
         </div>
     </section>
-
-    <!-- end fruit section -->
-
-
-    <!-- client section -->
 
     <section class="client_section layout_padding-bottom">
         <div class="container ">
@@ -237,7 +177,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
         </div>
     </section>
 

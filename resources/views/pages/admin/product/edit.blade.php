@@ -19,16 +19,6 @@
             </div>
 
             <div class="mb-3">
-                <label for="category" class="form-label">Danh mục</label>
-                <input type="text" class="form-control" id="category" name="category" value="{{ $product->category }}" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="brand" class="form-label">Thương hiệu</label>
-                <input type="text" class="form-control" id="brand" name="brand" value="{{ $product->brand }}" required>
-            </div>
-
-            <div class="mb-3">
                 <label for="description" class="form-label">Mô tả</label>
                 <textarea class="form-control" id="description" name="description">{{ $product->description }}</textarea>
             </div>

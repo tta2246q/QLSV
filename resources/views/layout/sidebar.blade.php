@@ -45,8 +45,6 @@
     <a href="{{route('dashboard')}}">🏠 Trang chủ</a>
     <a href="{{route('admin.product.index')}}">📦 Sản phẩm</a>
     <a href="{{route('admin.user.index')}}">👥 Khách hàng</a>
-    <a href="{{route('admin.categories.index')}}">📂 Danh mục</a>
-    <a href="{{route('admin.brands.index')}}">🌟 Thương hiệu</a>
     <a href="{{route('admin.blogs.index')}}">📝 Bài viết</a>
     <hr class="bg-light">
     <a href="{{route('home')}}">🚪 Đăng xuất</a>

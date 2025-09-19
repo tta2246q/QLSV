@@ -13,8 +13,6 @@
                 <p><strong>ID:</strong> {{ $product->id }}</p>
                 <p><strong>Tên sản phẩm:</strong> {{ $product->name }}</p>
                 <p><strong>Giá:</strong> {{ number_format($product->price, 0, ',', '.') }} VND</p>
-                <p><strong>Danh mục:</strong> {{ $product->category }}</p>
-                <p><strong>Thương hiệu:</strong> {{ $product->brand }}</p>
                 <p><strong>Mô tả:</strong> {{ $product->description }}</p>
 
                 <div class="mb-3">
