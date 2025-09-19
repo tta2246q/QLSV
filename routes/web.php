@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use Phiki\Phast\Root;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+
 
 Route::get('/', function () {
     return view('pages.admin.index');
@@ -16,9 +21,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'homepage'])->n
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'aboutpage'])->name('about');
 Route::get('/product', [App\Http\Controllers\HomeController::class, 'productpage'])->name('product');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contactpage'])->name('contact');
-Route::get('/register', [App\Http\Controllers\HomeController::class, 'registerpage'])->name('register');
-Route::get('/login', [App\Http\Controllers\HomeController::class, 'loginpage'])->name('login');
+Route::get('/blog', [App\Http\Controllers\HomeController::class, 'blogpage'])->name('blog');
+Route::get('/blog/{id}', [App\Http\Controllers\HomeController::class, 'deltaiblog'])->name('blogs.show');
 
+Route::get('/register', [App\Http\Controllers\HomeController::class, 'registerpage'])->name('register');
+Route::post('/register', [AuthController::class, 'register'])->name('register');
+Route::get('/login', [App\Http\Controllers\HomeController::class, 'loginpage'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login');
 // admin
 
 Route::get('/dashboard', [App\Http\Controllers\AdminController::class, 'dashboard'])->name('dashboard');

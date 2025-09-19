@@ -6,6 +6,7 @@
   <title>Sidebar Quản lý bán hàng</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{asset('css/admin.css')}}">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -41,14 +42,14 @@
 
   <div class="sidebar">
     <h4 class="text-center mb-4">📊 Quản lý bán hàng</h4>
-    <a href="#">🏠 Trang chủ</a>
-    <a href="{{route('productadmin')}}">📦 Sản phẩm</a>
-    <a href="{{route('useradmin')}}">👥 Khách hàng</a>
-    <a href="{{route('categoriesadmin')}}">🛒 Danh mục</a>
-    <a href="{{route('admin.brands.index')}}">💰 Thương hiệu</a>
-    <a href="#">⚙️ Cài đặt</a>
+    <a href="{{route('dashboard')}}">🏠 Trang chủ</a>
+    <a href="{{route('admin.product.index')}}">📦 Sản phẩm</a>
+    <a href="{{route('admin.user.index')}}">👥 Khách hàng</a>
+    <a href="{{route('admin.categories.index')}}">📂 Danh mục</a>
+    <a href="{{route('admin.brands.index')}}">🌟 Thương hiệu</a>
+    <a href="{{route('admin.blogs.index')}}">📝 Bài viết</a>
     <hr class="bg-light">
-    <a href="login.html">🚪 Đăng xuất</a>
+    <a href="{{route('home')}}">🚪 Đăng xuất</a>
   </div>
 
   <!-- MAIN CONTENT -->

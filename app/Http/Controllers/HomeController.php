@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
+use App\Models\Blog;
 
 class HomeController extends Controller
 {
-    public function homepage(){
-        return view('pages.user.home');
+    public function homepage(){      
+        $products = Product::take(6)->get();
+        return view('pages.user.home', compact('products'));
     }
     public function aboutpage(){
         return view('pages.user.about');
@@ -23,5 +26,13 @@ class HomeController extends Controller
     }
     public function loginpage(){
         return view('pages.user.login');
+    }
+    public function blogpage(){
+        $blogs = Blog::all();
+        return view('pages.user.blog', compact('blogs'));
+    }
+    public function deltaiblog($id){
+        $blog = Blog::findOrFail($id);
+        return view('pages.user.deltaiblog', compact('blog'));
     }
 }

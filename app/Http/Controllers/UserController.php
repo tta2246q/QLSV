@@ -9,6 +9,7 @@ class UserController extends Controller
 {
     public function index(){
         $users = User::all();
+        $toalUsers = $users->count();
         return view('pages.admin.user.index', compact('users'));
     }
     public function create(){

@@ -10,6 +10,7 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::all();
+        $totalBlogs = $blogs->count();
         return view('pages.admin.blog.index', compact('blogs'));
     }
     public function create()

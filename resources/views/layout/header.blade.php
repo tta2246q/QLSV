@@ -54,28 +54,24 @@
                         <div class="d-flex  flex-column flex-lg-row align-items-center">
                             <ul class="navbar-nav  ">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span
+                                    <a class="nav-link" href="{{route('home')}}">Home <span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About </a>
+                                    <a class="nav-link" href="{{route('about')}}">About </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="fruit.html">Our Fruit </a>
+                                    <a class="nav-link" href="{{route('product')}}">Product </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                                    <a class="nav-link" href="{{route('blog')}}">Blog </a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Login</a>
+                                    <a class="nav-link" href="{{route('login')}}">Login</a>
                                 </li>
                             </ul>
-                            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                            </form>
                         </div>
                     </div>
                 </nav>

@@ -10,6 +10,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
+        $totalcategories = $categories->count();
         return view('pages.admin.categories.index', compact('categories'));
     }
     public function create()
