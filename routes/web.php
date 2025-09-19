@@ -62,3 +62,13 @@ Route::post('/Admin/brands', [App\Http\Controllers\BrandController::class, 'stor
 Route::get('/Admin/brands/{brand}/edit', [App\Http\Controllers\BrandController::class, 'edit'])->name('admin.brands.edit');
 Route::put('/Admin/brands/{brand}', [App\Http\Controllers\BrandController::class, 'update'])->name('admin.brands.update');
 Route::delete('/Admin/brands/{brand}', [App\Http\Controllers\BrandController::class, 'destroy'])->name('admin.brands.destroy');
+
+
+// Blog Management
+Route::get('/Admin/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('admin.blogs.index');
+Route::get('/Admin/blogs/create', [App\Http\Controllers\BlogController::class, 'create'])->name('admin.blogs.create');
+Route::post('/Admin/blogs', [App\Http\Controllers\BlogController::class, 'store'])->name('admin.blogs.store');
+Route::get('/Admin/blogs/{blog}/edit', [App\Http\Controllers\BlogController::class, 'edit'])->name('admin.blogs.edit');
+Route::get('/Admin/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('admin.blogs.show');
+Route::put('/Admin/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'update'])->name('admin.blogs.update');
+Route::delete('/Admin/blogs/{blog}', [App\Http\Controllers\BlogController::class, 'destroy'])->name('admin.blogs.destroy');
