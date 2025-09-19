@@ -45,7 +45,7 @@
     <a href="{{route('productadmin')}}">📦 Sản phẩm</a>
     <a href="{{route('useradmin')}}">👥 Khách hàng</a>
     <a href="{{route('categoriesadmin')}}">🛒 Danh mục</a>
-    <a href="#">💰 Doanh thu</a>
+    <a href="{{route('admin.brands.index')}}">💰 Thương hiệu</a>
     <a href="#">⚙️ Cài đặt</a>
     <hr class="bg-light">
     <a href="login.html">🚪 Đăng xuất</a>

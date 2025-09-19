@@ -54,3 +54,11 @@ Route::post('/Admin/categories', [App\Http\Controllers\CategoryController::class
 Route::get('/Admin/categories/{category}/edit', [App\Http\Controllers\CategoryController::class, 'edit'])->name('admin.categories.edit');
 Route::put('/Admin/categories/{category}', [App\Http\Controllers\CategoryController::class, 'update'])->name('admin.categories.update');
 Route::delete('/Admin/categories/{category}', [App\Http\Controllers\CategoryController::class, 'destroy'])->name('admin.categories.destroy');
+
+// Brand Management
+Route::get('/Admin/brands', [App\Http\Controllers\BrandController::class, 'index'])->name('admin.brands.index');
+Route::get('/Admin/brands/create', [App\Http\Controllers\BrandController::class, 'create'])->name('admin.brands.create');
+Route::post('/Admin/brands', [App\Http\Controllers\BrandController::class, 'store'])->name('admin.brands.store');
+Route::get('/Admin/brands/{brand}/edit', [App\Http\Controllers\BrandController::class, 'edit'])->name('admin.brands.edit');
+Route::put('/Admin/brands/{brand}', [App\Http\Controllers\BrandController::class, 'update'])->name('admin.brands.update');
+Route::delete('/Admin/brands/{brand}', [App\Http\Controllers\BrandController::class, 'destroy'])->name('admin.brands.destroy');
