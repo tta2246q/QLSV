@@ -11,7 +11,5 @@ class Product extends Model
         'price',
         'description',
         'image',
-        'brand',
-        'category',
     ];
 }

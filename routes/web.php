@@ -53,22 +53,6 @@ Route::get('/Admin/product/{product}', [App\Http\Controllers\ProductController::
 Route::put('/Admin/product/{product}', [App\Http\Controllers\ProductController::class, 'update'])->name('admin.product.update');
 Route::delete('/Admin/product/{product}', [App\Http\Controllers\ProductController::class, 'destroy'])->name('admin.product.destroy');
 
-// Category Management
-Route::get('/Admin/categories', [App\Http\Controllers\CategoryController::class, 'index'])->name('admin.categories.index');
-Route::get('/Admin/categories/create', [App\Http\Controllers\CategoryController::class, 'create'])->name('admin.categories.create');
-Route::post('/Admin/categories', [App\Http\Controllers\CategoryController::class, 'store'])->name('admin.categories.store');
-Route::get('/Admin/categories/{category}/edit', [App\Http\Controllers\CategoryController::class, 'edit'])->name('admin.categories.edit');
-Route::put('/Admin/categories/{category}', [App\Http\Controllers\CategoryController::class, 'update'])->name('admin.categories.update');
-Route::delete('/Admin/categories/{category}', [App\Http\Controllers\CategoryController::class, 'destroy'])->name('admin.categories.destroy');
-
-// Brand Management
-Route::get('/Admin/brands', [App\Http\Controllers\BrandController::class, 'index'])->name('admin.brands.index');
-Route::get('/Admin/brands/create', [App\Http\Controllers\BrandController::class, 'create'])->name('admin.brands.create');
-Route::post('/Admin/brands', [App\Http\Controllers\BrandController::class, 'store'])->name('admin.brands.store');
-Route::get('/Admin/brands/{brand}/edit', [App\Http\Controllers\BrandController::class, 'edit'])->name('admin.brands.edit');
-Route::put('/Admin/brands/{brand}', [App\Http\Controllers\BrandController::class, 'update'])->name('admin.brands.update');
-Route::delete('/Admin/brands/{brand}', [App\Http\Controllers\BrandController::class, 'destroy'])->name('admin.brands.destroy');
-
 
 // Blog Management
 Route::get('/Admin/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('admin.blogs.index');

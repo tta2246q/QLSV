@@ -4,7 +4,7 @@
 
     <div class="container py-5" style="background: #f8f9fa; min-height: 100vh;">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="">
 
                 <div class="card shadow-lg border-0" style="border-radius: 20px; overflow: hidden;">
                     <div class="card-body">
@@ -17,10 +17,8 @@
                         style="height: 350px; object-fit: cover;">
 
                     <div class="card-body" style="background: #ffffff;">
-                        <!-- Tiêu đề -->
 
 
-                        <!-- Thông tin thêm -->
                         <p class="text-muted mb-4" style="font-size: 0.9rem;">
                             Đăng ngày: {{ $blog->created_at->format('d/m/Y') }}
                         </p>
